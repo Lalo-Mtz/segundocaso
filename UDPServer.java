@@ -18,7 +18,7 @@ public class UDPServer {
 
                 //Modificaciones, linea 20,21,23
                 System.out.println(new String(request.getData()) + " desde el cliente " + request.getAddress().toString());
-                byte [] rep = (new String(request.getData()).concat(" modificado desde el servidor 192.168.1.100")).getBytes();
+                byte [] rep = (new String(request.getData()).concat(" modificado desde el servidor 192.168.1.120")).getBytes();
 
                 
                 DatagramPacket reply = new DatagramPacket(rep, rep.length,
